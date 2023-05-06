@@ -1,0 +1,9 @@
+@import './Helpers/colors', './Helpers/shortcommands', './Helpers/font', './Helpers/globals', './Helpers/Animations';
+@import './Header/navbar', './Header/carousel', './Main/services', './Main/discover', './Main/package', './Main/travelers', './Main/destination', './Footer/footer';
+
+body {
+    @include flexCenter(false, true, unset, flex-start);
+    flex-direction: column;
+}
+
+@import './Helpers/Responsive/responsive';

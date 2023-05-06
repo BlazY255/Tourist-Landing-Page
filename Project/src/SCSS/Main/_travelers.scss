@@ -1,0 +1,140 @@
+#clients {
+    width: 100%;
+    height: 1130px;
+
+    font-family: $fontBoldPrimary;
+
+    @include flexCenter(true, true, unset, flex-start);
+    flex-direction: column;
+
+    h6 {
+        margin-top: 87px;
+
+        font-size: $fontSizeL;
+        text-transform: capitalize;
+    }
+
+    h6:before {
+        content: 'OUR SMILES';
+        position: absolute;
+
+        transform: translate(55%, -120%);
+
+        font-size: $fontSizeM;
+        color: $primaryTextGrey;
+    }
+
+    span {
+        text-decoration: underline;
+        text-decoration-style: wavy;
+        text-underline-offset: 7px;
+        text-decoration-thickness: 5px;
+        text-decoration-color: $primaryTextBlue;
+    }
+
+
+    #client_List {
+        @include flexCenter(true, true, unset, space-between);
+
+        width: 1168px;
+        height: 409px;
+
+        margin-top: 90px;
+
+        div {
+            width: 368px;
+            height: 409px;
+
+            background-color: #F4F4F4F4;
+
+            @include flexCenter(true, true, unset, flex-start);
+            flex-direction: column;
+
+            .client_Image {
+                width: 85px;
+                height: 85px;
+
+                margin-top: 48px;
+
+                background-position: 55% 5%;
+
+                border-radius: 50%;
+            }
+
+            .client_Image.One {
+                background-image: url('../Assets/UsedImages/Section_Four/Ribeca.png');
+            }
+
+            .client_Image.Two {
+                background-image: url('../Assets/UsedImages/Section_Four/Jimmy.png');
+            }
+
+            .client_Image.Three {
+                background-image: url('../Assets/UsedImages/Section_Four/Theodule.png');
+            }
+
+            p {
+                margin-top: 14px;
+
+                color: $secondaryTextBlue;
+                font-size: $fontSizeSM;
+            }
+
+            p+p {
+                margin-top: 30px;
+
+                color: black;
+                font-size: $fontSizeS;
+                line-height: 1.4;
+
+                text-align: center;
+            }
+
+            i {
+                margin-top: 100px;
+            }
+
+        }
+    }
+
+    #client_offer {
+        height: 510px;
+        width: 100%;
+
+        background-image: url('../Assets/UsedImages/Section_Four/BG_M.png');
+        background-size: cover;
+
+
+
+        @include flexCenter(true, true, unset, flex-end);
+        flex-direction: column;
+
+        p {
+            color: white;
+
+            font-size: $fontSizeXXL;
+            margin-bottom: 58px;
+        }
+
+        button {
+            background-image: $primaryGradient_Blue_Green;
+            background-size: cover;
+
+            cursor: pointer;
+
+            width: 180px;
+            height: 60px;
+
+            border-radius: 25px;
+            border: 0;
+
+            font-size: $fontSizeM;
+
+            color: white;
+
+            margin-bottom: 46px;
+        }
+
+    }
+
+}

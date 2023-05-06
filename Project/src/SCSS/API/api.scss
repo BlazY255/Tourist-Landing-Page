@@ -1,0 +1,84 @@
+@import '../Helpers/shortcommands', '../Helpers/font';
+
+body {
+    background-color: #272727;
+
+
+
+    #hero_Generator {
+        position: absolute;
+
+        width: 50%;
+        height: 750px;
+
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        border-radius: 25px;
+
+        background-color: darkslategray;
+        color: white;
+        text-align: center;
+        font-family: $fontBoldPrimary;
+
+        #displayImage {
+            border-radius: 25px;
+
+            margin-top: 5%;
+            margin-left: 13%;
+
+            width: 75%;
+            min-width: 300px;
+            height: 350px;
+
+            background-color: black;
+
+            background-size: cover;
+        }
+
+        h6 {
+            margin-top: 2%;
+            font-size: $fontSizeXXL;
+        }
+
+        p {
+            margin-top: 2%;
+
+            width: 75%;
+            min-width: 300px;
+            height: 200px;
+
+            margin-left: 12.5%;
+
+            background-color: rgba($color: black, $alpha: 0.3);
+        }
+
+        button {
+            margin-top: 2%;
+
+            width: 200px;
+            height: 60px;
+
+            border-radius: 25px;
+            border: 2px solid white;
+            background-color: darkcyan;
+
+            color: white;
+            font-family: $fontBoldSecondary;
+            font-size: $fontSizeSM;
+
+            cursor: pointer;
+        }
+
+        button:hover {
+            border-color: darkblue;
+        }
+
+        button:active {
+            background-color: darkseagreen;
+            color: black;
+        }
+
+    }
+}

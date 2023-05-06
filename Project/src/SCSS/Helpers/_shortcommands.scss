@@ -1,0 +1,11 @@
+@mixin flexCenter($horizontal: false, $vertical: false, $spaceHorizontal: unset, $spaceVertical: unset) {
+    display: flex;
+
+    @if($horizontal ==true) {
+        align-items: if($spaceHorizontal !=unset, $spaceHorizontal, center);
+    }
+
+    @if($vertical ==true) {
+        justify-content: if($spaceVertical !=unset, $spaceVertical, center);
+    }
+}

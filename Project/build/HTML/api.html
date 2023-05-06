@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/api.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" id="Logo"><img src="../Assets/UsedImages/logo.png" alt="Logo"></a>
+            <label>
+                <input type="checkbox" name="" onclick="OpenBar()">
+
+                <div class=" bar">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </div>
+            </label>
+            <ul class="nav_links">
+                <li><a href="index.html">home</a></li>
+                <li><a href="#footer_container">about us</a></li>
+                <li><a href="#services">our services</a></li>
+                <li><a href="#offers">tour package</a></li>
+                <li class="active"><a href="">API</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="../JavaScript/header.js"></script>
+
+
+    <div id="hero_Generator">
+        <div id="displayImage"></div>
+        <h6 id="name">Hero Name</h6>
+        <p id="universe">Info About Him</p>
+        <button onclick="PullRandom()">Generate a Hero</button>
+    </div>
+
+    <script src="../JavaScript/api.js"></script>
+</body>
+
+</html>

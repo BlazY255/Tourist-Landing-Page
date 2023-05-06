@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Raleway:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto&display=swap");
+body {
+  background-color: #272727;
+}
+body #hero_Generator {
+  position: absolute;
+  width: 50%;
+  height: 750px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  background-color: darkslategray;
+  color: white;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+body #hero_Generator #displayImage {
+  border-radius: 25px;
+  margin-top: 5%;
+  margin-left: 13%;
+  width: 75%;
+  min-width: 300px;
+  height: 350px;
+  background-color: black;
+  background-size: cover;
+}
+body #hero_Generator h6 {
+  margin-top: 2%;
+  font-size: 2.5rem;
+}
+body #hero_Generator p {
+  margin-top: 2%;
+  width: 75%;
+  min-width: 300px;
+  height: 200px;
+  margin-left: 12.5%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+body #hero_Generator button {
+  margin-top: 2%;
+  width: 200px;
+  height: 60px;
+  border-radius: 25px;
+  border: 2px solid white;
+  background-color: darkcyan;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+body #hero_Generator button:hover {
+  border-color: darkblue;
+}
+body #hero_Generator button:active {
+  background-color: darkseagreen;
+  color: black;
+}/*# sourceMappingURL=api.css.map */

@@ -1,0 +1,214 @@
+#offers {
+    position: relative;
+
+    width: 100%;
+    height: 979px;
+
+    font-family: $fontBoldPrimary;
+
+    @include flexCenter(true, true);
+    flex-direction: column;
+
+    h5 {
+        margin-top: 87px;
+        font-size: $fontSizeL;
+        text-transform: capitalize;
+    }
+
+    h5:before {
+        content: 'WE OFFER';
+        position: absolute;
+
+        transform: translate(120%, -100%);
+
+        font-size: $fontSizeM;
+        color: $primaryTextGrey;
+    }
+
+    span {
+        text-decoration: underline;
+        text-decoration-style: wavy;
+        text-underline-offset: 7px;
+        text-decoration-thickness: 5px;
+        text-decoration-color: $primaryTextBlue;
+    }
+
+    #Packages {
+
+        margin-top: 78px;
+
+        width: 863px;
+        height: 358px;
+
+        bottom: 0;
+
+        @include flexCenter(true, true, unset, space-between);
+
+        .Package_Container {
+            width: 267px;
+            height: 358px;
+
+            @include flexCenter(true, true, unset, flex-start);
+            flex-direction: column;
+
+            box-shadow: 0px 0px 1px black;
+
+            cursor: pointer;
+            user-select: none;
+
+            &:hover {
+                outline: 2px solid black;
+                width: 290px;
+            }
+
+            .Package {
+                width: 100%;
+                height: 246px;
+
+
+                position: relative;
+                flex-shrink: 0;
+
+                p {
+                    position: absolute;
+
+                    top: 10px;
+                    left: 10px;
+
+                    width: 67px;
+                    height: 25px;
+
+
+                    @include flexCenter(true, true);
+                    text-align: center;
+
+                    background-color: $primaryBackgroundYellow;
+                }
+            }
+
+            .Package.One {
+                background-image: url('../Assets/UsedImages/Section_Three/Houses_S.png');
+                background-size: cover;
+
+                p {
+                    width: 98px;
+                }
+            }
+
+            .Package.Two {
+                background-image: url('../Assets/UsedImages/Section_Three/Ocean_S.png');
+                background-size: cover;
+                background-position: 0 44%;
+            }
+
+            .Package.Three {
+                background-image: url('../Assets/UsedImages/Section_Three/Tower_S.png');
+                background-size: cover;
+                background-position: 0 80%;
+            }
+
+        }
+
+        h6 {
+            margin-top: 10px;
+
+            font-size: $fontSizeM;
+            color: $primaryTextBlue;
+        }
+
+        p {
+            margin-top: 13px;
+
+            font-size: $fontSizeS;
+        }
+
+        p+p {
+            margin-top: 5px;
+        }
+    }
+
+    #subscription {
+        position: relative;
+
+        width: 100%;
+        height: 350px;
+
+        margin-top: 71px;
+
+        background-image: url(../Assets/UsedImages/Section_Three/Dude_S.png);
+        background-size: cover;
+        background-position: center;
+
+        font-family: $fontBoldPrimary;
+        color: white;
+
+        @include flexCenter(true, true, unset, flex-start);
+        flex-direction: column;
+
+        * {
+            z-index: 1;
+        }
+
+        #overlay {
+            position: absolute;
+
+            width: 100%;
+            height: 100%;
+
+            z-index: 0;
+
+            opacity: 0.8;
+            background-image: $primaryGradient_Blue_Green;
+        }
+
+        h6 {
+            margin-top: 70px;
+            font-size: $fontSizeXL;
+            font-weight: 600;
+        }
+
+        p {
+            margin-top: 18px;
+            font-size: $fontSizeSM;
+        }
+
+        form {
+            margin-top: 60px;
+
+            #email_Input {
+                height: 50px;
+                width: 400px;
+
+                border-radius: 25px;
+
+                background-color: transparent;
+
+                border-color: white;
+                border-style: solid;
+
+                text-align: center;
+
+                color: white;
+                font-size: $fontSizeXM;
+                font-weight: 600;
+
+                margin-right: 20px;
+            }
+
+            #submit_Input {
+                height: 50px;
+                width: 155px;
+
+                border-radius: 25px;
+                border: 0;
+
+                cursor: pointer;
+
+                color: #08AEEA;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,118 @@
+#countries {
+
+    font-family: $fontBoldPrimary;
+
+    width: 100%;
+    height: 700px;
+
+    @include flexCenter(true, true, unset, flex-start);
+    flex-direction: column;
+
+    h6 {
+        margin-top: 87px;
+
+        font-size: $fontSizeL;
+        text-transform: capitalize;
+    }
+
+    h6:before {
+        content: 'DESTINATION';
+        position: absolute;
+
+        transform: translate(120%, -120%);
+
+        font-size: $fontSizeM;
+        color: $primaryTextGrey;
+    }
+
+    span {
+        text-decoration: underline;
+        text-decoration-style: wavy;
+        text-underline-offset: 7px;
+        text-decoration-thickness: 5px;
+        text-decoration-color: $primaryTextBlue;
+    }
+
+    #countrie_Containers {
+        margin-top: 100px;
+
+        width: 1200px;
+        height: 425px;
+
+        @include flexCenter(true, true, unset, space-around);
+
+        .coutrie_Container {
+            width: 271px;
+            height: 100%;
+
+            position: relative;
+
+            background-size: cover;
+            background-position: center;
+
+
+            div {
+                width: 100%;
+                height: 100%;
+                background-image: $secondaryGradient_lightGrey_Black_DarkGrey;
+                opacity: 0.9;
+            }
+
+            color: white;
+
+            p {
+                margin-left: 20px;
+
+                position: absolute;
+                bottom: 30px;
+
+                font-size: $fontSizeL;
+            }
+
+            p+p {
+                bottom: 5px;
+
+                font-size: $fontSizeS;
+            }
+
+            button {
+                position: absolute;
+
+                cursor: pointer;
+
+                bottom: 10px;
+                right: 15px;
+
+                border: 0;
+                border-radius: 20px;
+
+                background-image: $primaryGradient_Blue_Green;
+
+                height: 43px;
+                width: 43px;
+
+                i {
+                    color: white;
+                }
+            }
+        }
+
+        .coutrie_Container.One {
+            background-image: url('../Assets/UsedImages/Section_Five/rock_s.png');
+
+        }
+
+        .coutrie_Container.Two {
+            background-image: url('../Assets/UsedImages/Section_Five/tower_m.png');
+            background-position: 65% 0;
+        }
+
+        .coutrie_Container.Three {
+            background-image: url('../Assets/UsedImages/Section_Five/shanxai_s.png');
+        }
+
+        .coutrie_Container.Four {
+            background-image: url('../Assets/UsedImages/Section_Five/rock_s.png');
+        }
+    }
+}

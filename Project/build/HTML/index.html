@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism</title>
+    <link rel="icon" type="image/x-icon" href="../Assets/UsedImages/cat.png">
+
+    <meta property="og:title" content="Tourism" />
+    <meta property="og:description" content="DOPE Tourism WEBPAGE" />
+    <meta property="og:image" content="rame foto" />
+    <meta property="og:url" content="sakaifod dasveneba.com" />
+
+    <meta name="description" content="DOPE Tourism WEBPAGE">
+    <meta name="keywords" content="Tourism">
+
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <script src="https://kit.fontawesome.com/6e915b7d58.js" crossorigin="anonymous"></script>
+    <script src="../JavaScript/Helpers/jquery-3.6.3.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" id="Logo"><img src="../Assets/UsedImages/logo.png" alt="Logo"></a>
+            <label>
+                <input type="checkbox" name="" onclick="OpenBar()">
+
+                <div class=" bar">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </div>
+            </label>
+            <ul class="nav_links">
+                <li class="active"><a href="">home</a></li>
+                <li><a href="#footer_container">about us</a></li>
+                <li><a href="#services">our services</a></li>
+                <li><a href="#offers">tour package</a></li>
+                <li><a href="api.html">API</a></li>
+            </ul>
+        </nav>
+        <section id="carousel">
+            <div id="carousel_Containers">
+                <div class="carousel_Container one" id="carousel_Container_One"></div>
+                <div class="carousel_Container two" id="carousel_Container_Two"></div>
+                <div class="carousel_Container three" id="carousel_Container_Three">
+                </div>
+            </div>
+            <div id="carousel_Buttons">
+                <button class="carousel_LeftButton" onclick="LaunchCarouselMovement(true,true,true)"><i
+                        class="fa-solid fa-arrow-right fa-rotate-180"></i></button>
+                <button class="carousel_RightButton" onclick="LaunchCarouselMovement(true,true,false)"><i
+                        class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="carousel_Overlay two Fade"></div>
+            <div id="carousel_Content">
+                <a href="" class="carousel_Content top Up" draggable="false">From $199/Person</a>
+                <div class="carousel_Content bottom Down">
+                    <h6>discover greece</h6>
+                    <p>travel with unique experience</p>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <script src="../JavaScript/header.js"></script>
+
+    <main>
+        <section id="services">
+            <article>
+                <h6><span>Our </span>hot services</h6>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard</p>
+            </article>
+            <div id="service_Flexbox"></div>
+            <div class="service_Display">
+                <button id="service_Display_Button" onclick="OpenDisplay(false)"><i
+                        class="fa-solid fa-xmark fa-xl"></i></button>
+                <div id="service_header_container">
+                    <h6 id="service_Header">Yo</h6>
+                </div>
+                <div id="service_Image_Container"></div>
+                <p id="service_Paragraph"></p>
+            </div>
+        </section>
+
+        <script src="../JavaScript/main/section_one.js"></script>
+
+        <section id="discover">
+            <div id="preview_Background">
+                <div id="overlay"></div>
+                <h6>Watch O<span>ur Vid</span>eo Tour</h6>
+                <div id="video_Container">
+                    <button><i class="fa-sharp fa-solid fa-play fa-2xl"></i></button>
+                    <video src=""></video>
+                </div>
+            </div>
+            <div id="discover_info">
+                <div>
+                    <div class="discover_icon star">
+                        <img src="../Assets/UsedImages/Section_Two/icons/star.PNG" alt="star">
+                    </div>
+                    <h6 class="discover_count">120859</h6>
+                    <p>HAPPY TRAVELLERS</p>
+                </div>
+                <div>
+                    <div class="discover_icon tower">
+                        <img src="../Assets/UsedImages/Section_Two/icons/tower.PNG" alt="towers">
+                    </div>
+                    <h6 class="discover_count">2594</h6>
+                    <p>SATISFIED TOURS</p>
+                </div>
+                <div>
+                    <div class="discover_icon globe">
+                        <img src="../Assets/UsedImages/Section_Two/icons/globe.PNG" alt="globe">
+                    </div>
+                    <h6 class="discover_count">854</h6>
+                    <p>DESTINATION</p>
+                </div>
+                <div>
+                    <div class="discover_icon buildings">
+                        <img src="../Assets/UsedImages/Section_Two/icons/building.PNG" alt="building">
+                    </div>
+                    <h6 class="discover_count">978</h6>
+                    <p>HOTELS & RESORTS</p>
+                </div>
+            </div>
+        </section>
+
+        <script src="../JavaScript/main/section_two.js"></script>
+
+        <section id="offers">
+            <h5>Popular T<span>our P</span>ackage</h5>
+            <div id="Packages">
+                <div class="Package_Container">
+                    <div class="Package One">
+                        <p>Honeymoon</p>
+                    </div>
+                    <p>$299/person</p>
+                    <h6>Blue Beauty of Greece</h6>
+                    <p>5 Days / 6 Night</p>
+                </div>
+                <div class="Package_Container">
+                    <div class="Package Two">
+                        <p>Holiday</p>
+                    </div>
+                    <p>$178/person</p>
+                    <h6>Nature of Phuket</h6>
+                    <p>3 Days / 4 Night</p>
+                </div>
+                <div class="Package_Container">
+                    <div class="Package Three">
+                        <p>Holiday</p>
+                    </div>
+                    <p>$1111/person</p>
+                    <h6>World Tour of Paris</h6>
+                    <p>7 Days / 8 Night</p>
+                </div>
+            </div>
+            <div id="subscription">
+                <div id="overlay"></div>
+                <h6>Get 10% Off on Your Next Travel</h6>
+                <p>Maximum discount 1000$ per person</p>
+                <form action="">
+                    <input type="email" id="email_Input">
+                    <input type="submit" id="submit_Input" value="Subscribe">
+                </form>
+            </div>
+        </section>
+        <section id="clients">
+            <h6>Happy<span> Trav</span>elers</h6>
+            <div id="client_List">
+                <div>
+                    <div class="client_Image One"></div>
+                    <p>Ribeca Singh</p>
+                    <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry. Lorem <br>
+                        Ipsumhas beenthe
+                        industry's standard</p>
+                    <i class="fa-sharp fa-solid fa-quote-right fa-2xl"></i>
+                </div>
+                <div>
+                    <div class="client_Image Two"></div>
+                    <p>Jimmy dean</p>
+                    <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry. Lorem <br>
+                        Ipsumhas beenthe
+                        industry's standard</p>
+                    <i class="fa-sharp fa-solid fa-quote-right fa-2xl"></i>
+                </div>
+                <div>
+                    <div class="client_Image Three"></div>
+                    <p>Theodule Terer</p>
+                    <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry. Lorem <br>
+                        Ipsumhas beenthe industry's standard</p>
+                    <i class="fa-sharp fa-solid fa-quote-right fa-2xl"></i>
+                </div>
+            </div>
+            <div id="client_offer">
+                <p>Ready to plan your trip?</p>
+                <button>BOOK NOW</button>
+            </div>
+        </section>
+        <section id="countries">
+            <h6>Popular Tou<span>rism</span> Countries</h6>
+            <div id="countrie_Containers">
+                <div class="coutrie_Container One">
+                    <div></div>
+                    <p>Thailand</p>
+                    <p>$900 - $1900</p>
+                    <button><i class="fa-solid fa-arrow-right fa-xl"></i></button>
+                </div>
+                <div class="coutrie_Container Two">
+                    <div></div>
+                    <p>Italy</p>
+                    <p>$700 - $2000</p>
+                    <button><i class="fa-solid fa-arrow-right fa-xl"></i></button>
+                </div>
+                <div class="coutrie_Container Three">
+                    <div></div>
+                    <p>Indonesia</p>
+                    <p>$300 - $1100</p>
+                    <button><i class="fa-solid fa-arrow-right fa-xl"></i></button>
+                </div>
+                <div class="coutrie_Container Four">
+                    <div></div>
+                    <p>Singapore</p>
+                    <p>$1900 - $2700</p>
+                    <button><i class="fa-solid fa-arrow-right fa-xl"></i></button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d845.5802290192007!2d-87.92274295641887!3d44.531915453900204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8802e8aa26451ae3%3A0x7f3f8d883ba11b86!2sDavid%20A%20Cofrin%20Library!5e0!3m2!1ska!2sge!4v1683130369806!5m2!1ska!2sge"
+                width="100%" height="435" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+    <footer>
+        <div id="footer_container">
+
+            <ul>
+                <li>
+                    <h6>Quick Links</h6>
+                </li>
+                <li>Home</li>
+                <li>About Company</li>
+                <li>Testimonials</li>
+                <li>Infrastructure</li>
+            </ul>
+
+
+            <ul>
+                <li>
+                    <h6>Support</h6>
+                </li>
+                <li>Get Started</li>
+                <li>Lorem</li>
+                <li>Help</li>
+                <li>Ipsum</li>
+            </ul>
+
+
+            <ul>
+                <li>
+                    <h6>Address</h6>
+                </li>
+                <li>14, 1 Ellis bridge ST</li>
+                <li>auckland 3500, Australia</li>
+                <li>+1234567890</li>
+                <li>contactus@demo.com</li>
+            </ul>
+
+        </div>
+
+        <form action="">
+            <p>Subscribe to our newsletter</p>
+            <input type="email" placeholder="Your email" id="footer_input">
+            <input type="submit" id="button_input">
+        </form>
+
+        <h6 id="copyright_Tag">trourism&copyAll Rights Reserved</h6>
+    </footer>
+</body>
+
+
+</html>

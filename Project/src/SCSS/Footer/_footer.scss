@@ -1,0 +1,128 @@
+footer {
+    position: relative;
+
+    width: 100%;
+    height: 349px;
+
+    @include flexCenter(true, true, flex-start, flex-start);
+
+    background-color: $footerBackgroundBlack;
+
+    font-family: $fontBoldPrimary;
+
+    #footer_container {
+        height: 244px;
+        width: 622px;
+
+        margin-top: 53.92px;
+        margin-left: 93.71px;
+
+        @include flexCenter(true, true);
+
+        ul {
+            width: 222px;
+            height: 100%;
+
+            list-style: none;
+
+            color: white;
+
+            li {
+                margin-top: 10%;
+
+                color: $footerTextGrey;
+
+                h6 {
+                    font-size: $fontSizeXM;
+                    color: white;
+                }
+            }
+
+        }
+    }
+
+    form {
+        position: absolute;
+
+        margin-top: 90px;
+        @include flexCenter(true, true);
+
+        right: 96px;
+
+        p {
+            position: absolute;
+            bottom: 62px;
+            left: 0px;
+
+            font-family: $fontRegular;
+
+            color: white;
+        }
+
+        #footer_input {
+            width: 285px;
+            height: 47px;
+
+            border: 0;
+
+            border-radius: 5px;
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+
+            text-indent: 5%;
+        }
+
+        #button_input {
+            width: 58px;
+            height: 47px;
+
+            font-family: $fontBoldPrimary;
+            color: white;
+
+            cursor: pointer;
+
+            background-image: $primaryGradient_Blue_Green;
+            background-size: cover;
+
+            border: 0;
+
+            border-radius: 5px;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+        }
+
+    }
+
+    #copyright_Tag {
+        position: absolute;
+        bottom: 0;
+
+        font-size: $fontSizeXM;
+
+
+
+        height: 45px;
+
+        left: 50%;
+        transform: translateX(-50%);
+
+        color: white;
+    }
+
+    #copyright_Tag:before {
+        content: '';
+
+        position: absolute;
+
+        width: 100vw;
+
+        height: 1px;
+
+        background-color: #E8E8E8;
+
+        left: 50%;
+        transform: translateX(-50.5%);
+
+        bottom: 63.67px;
+    }
+}

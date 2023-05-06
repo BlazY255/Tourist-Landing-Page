@@ -1,0 +1,204 @@
+#services {
+    width: 100%;
+    height: 886px;
+
+    font-family: $fontBoldPrimary;
+
+    @include flexCenter(true, true, flex-start);
+
+    article {
+        width: 19.2%;
+        height: 240px;
+
+        margin-left: 95px;
+        margin-top: 120px;
+
+        h6 {
+            font-size: $fontSizeL;
+            text-transform: capitalize;
+        }
+
+        h6:before {
+            content: 'DISCOVER';
+            position: absolute;
+
+            transform: translateY(-100%);
+
+            font-size: $fontSizeM;
+            color: $primaryTextGrey;
+        }
+
+        span {
+            text-decoration: underline;
+            text-decoration-style: wavy;
+            text-underline-offset: 7px;
+            text-decoration-thickness: 3.5px;
+            text-decoration-color: $primaryTextBlue;
+        }
+
+        p {
+            margin-top: 40px;
+            color: $primaryTextGrey;
+        }
+    }
+
+    #service_Flexbox {
+        width: 68.48%;
+        height: 682px;
+
+        float: right;
+
+        &::-webkit-scrollbar {
+
+            width: 1em;
+        }
+
+        &::-webkit-scrollbar-track {
+            border-radius: 20px;
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            border-radius: 20px;
+            background-color: darkgrey;
+            outline: 1px solid slategrey;
+        }
+
+
+        margin-top: 80px;
+
+        overflow: auto;
+
+        @include flexCenter(true, true, unset, center);
+        flex-wrap: wrap;
+
+        .service_container {
+            height: 300px;
+            width: 268px;
+
+            margin-bottom: 2%;
+
+            cursor: pointer;
+            user-select: none;
+
+            transition: height 100ms linear, width 100ms linear;
+
+            margin-left: 32px;
+
+            div {
+                width: 100%;
+                height: 181px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            h6 {
+                font-size: $fontSizeSM;
+
+                margin-top: 20.38px;
+
+                text-transform: uppercase;
+                color: $primaryTextBlack;
+            }
+
+            p {
+                margin-top: 8px;
+                color: $primaryTextGrey;
+            }
+
+            &:hover {
+                outline: 1px solid black;
+                box-shadow: 3px 3px 5px black;
+                height: 325px;
+                width: 290px;
+            }
+        }
+    }
+
+    .service_Display {
+        display: none;
+
+        width: 800px;
+        height: 765px;
+
+        margin-top: 30px;
+        margin-right: 25px;
+        margin-left: 25px;
+
+        position: relative;
+
+        background-color: $primaryBackgroundGrey;
+
+        box-shadow: 0px 0px 5px black;
+        border-radius: 20px;
+
+        overflow: hidden;
+
+        #service_header_container {
+            width: 100%;
+            height: 6%;
+            top: 0;
+            position: absolute;
+
+            background-color: white;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+
+            @include flexCenter(true, true, unset, unset);
+            flex-direction: column;
+
+            h6 {
+                position: absolute;
+
+                text-align: center;
+                text-transform: capitalize;
+                font-size: $fontSizeXL;
+            }
+        }
+
+
+        button {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+
+            cursor: pointer;
+
+            top: 3px;
+            right: 3px;
+
+            z-index: 1;
+
+            background-color: white;
+            border: 0;
+        }
+
+        #service_Image_Container {
+            margin-top: 10.5%;
+
+            width: 100%;
+            height: 40%;
+
+            background-size: cover;
+        }
+
+        p {
+            text-align: center;
+            width: 100%;
+            height: 50%;
+            position: absolute;
+            bottom: 0;
+
+            overflow: auto;
+
+            background-color: white;
+        }
+    }
+
+    .service_Display.open {
+        display: unset;
+    }
+}

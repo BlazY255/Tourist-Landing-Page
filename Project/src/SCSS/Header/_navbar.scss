@@ -1,0 +1,156 @@
+$navHeight: 81px;
+
+
+
+nav {
+    position: fixed;
+    z-index: 2;
+
+    background-color: #FFFFFF;
+
+    width: 100%;
+    height: $navHeight;
+
+    @include flexCenter(true, true, unset, space-between);
+
+
+    #Logo {
+        position: absolute;
+        text-decoration: none;
+
+        left: 95px;
+
+        font-size: $fontSizeL;
+
+        transition: filter 0.5s ease-in;
+    }
+
+    #Logo:hover {
+        filter: invert(67%) sepia(56%) saturate(4943%) hue-rotate(159deg) brightness(97%) contrast(94%);
+    }
+
+    .nav_links {
+        position: absolute;
+
+        width: 36%;
+
+        right: 98px;
+
+        list-style: none;
+
+        @include flexCenter(false, true, unset, space-between);
+
+        li {
+
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+
+                font-size: $fontSizeM;
+                font-family: $fontBoldPrimary;
+                color: $secondaryTextBlack;
+            }
+
+        }
+
+        li::before {
+            content: '';
+            position: relative;
+            display: block;
+
+            width: 0%;
+            height: 2px;
+
+            top: 100%;
+
+            background-color: black;
+
+            transition: width 250ms ease-in;
+        }
+
+        .active::before {
+            width: 100%;
+        }
+
+        &:has(>li:hover) {
+            li:hover {
+                &::before {
+                    width: 100%;
+                }
+            }
+
+            .active::before {
+                width: 0;
+            }
+        }
+    }
+
+    @mixin barLine {
+        height: 4px;
+        width: 25px;
+        background: black;
+        border-radius: 50px;
+        position: absolute;
+
+        transition: 0.3s ease;
+    }
+
+    input[type="checkbox"] {
+        -webkit-appearance: none;
+        visibility: hidden;
+        display: none;
+    }
+
+    label {
+        right: 20px;
+        top: 45%;
+
+        position: absolute;
+        z-index: 5;
+
+        display: none;
+    }
+
+    .bar {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+
+        .middle {
+            @include barLine();
+        }
+
+        .top {
+            bottom: 5px;
+            @include barLine();
+        }
+
+        .bottom {
+            top: 10px;
+            @include barLine();
+        }
+    }
+
+    input[type="checkbox"]:checked~.bar .top {
+        transform: rotate(-45deg);
+        width: 25px;
+        transform-origin: right;
+        top: -9.5px;
+        left: -15px;
+    }
+
+    input[type="checkbox"]:checked~.bar .bottom {
+        transform: rotate(45deg);
+        width: 25px;
+        transform-origin: right;
+        top: 9.5px;
+        left: -15px;
+    }
+
+    input[type="checkbox"]:checked~.bar .middle {
+        transform: translateX(10px);
+        opacity: 0;
+    }
+
+
+}
